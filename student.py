@@ -49,9 +49,8 @@ def main():
             return
 
         elif choice == '2':
-            first_name = input("Enter Student First_Name: ").capitalize()
             reg_no = input("Enter Reg_No.: ").capitalize()
-            search_student(first_name, reg_no)
+            search_student(reg_no)
             return
 
         elif choice == '3':
