@@ -10,7 +10,7 @@ def search_student(first_name, reg_no):
     with open('students.csv', 'r') as file:
         reader = csv.reader(file)
         for row in reader:
-            if row[0] == first_name or row[2] == reg_no:
+            if row[2] == reg_no:
                 print(f'First_Name: {row[0]} Last_Name: {row[1]} Reg_No: {row[2]}')
                 return
 
