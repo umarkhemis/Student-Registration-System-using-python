@@ -6,7 +6,7 @@ def add_student(first_name, last_name, reg_no):
         writer.writerow([first_name, last_name, reg_no])
 
 
-def search_student(first_name, reg_no):
+def search_student(reg_no):
     with open('students.csv', 'r') as file:
         reader = csv.reader(file)
         for row in reader:
